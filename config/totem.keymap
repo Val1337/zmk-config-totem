@@ -35,8 +35,8 @@
 
         combo_esc {
             timeout-ms = <50>;
-            key-positions = <0 1>;
-            bindings = <&kp ESC>;
+            key-positions = <20 10>;
+            bindings = <&kp LG(A)>;
         };
 
         combo_tvp {
