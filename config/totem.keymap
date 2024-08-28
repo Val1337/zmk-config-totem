@@ -35,7 +35,7 @@
 
         combo_esc {
             timeout-ms = <50>;
-            key-positions = <20 10>;
+            key-positions = <10 12>;
             bindings = <&kp LG(A)>;
         };
 
@@ -73,6 +73,26 @@
         right_brace {
             bindings = <&kp RIGHT_BRACE>;
             key-positions = <7 17>;
+        };
+
+        rus_x {
+            bindings = <&kp LEFT_BRACKET>;
+            key-positions = <29 28>;
+        };
+
+        y_ukr {
+            bindings = <&kp RIGHT_BRACKET>;
+            key-positions = <30 29>;
+        };
+
+        copy {
+            bindings = <&kp LC(C)>;
+            key-positions = <23 12>;
+        };
+
+        paste {
+            bindings = <&kp LC(V)>;
+            key-positions = <24 13>;
         };
     };
 
@@ -115,10 +135,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-              &kp Q  &kp W       &kp E                  &kp R        &kp T        &kp Y    &kp U              &kp I          &kp O       &kp P
-              &kp A  &mt LALT S  &mt LCTRL D            &kp F        &kp G        &kp H    &kp J              &mt RCTRL K    &mt RALT L  &kp SEMICOLON
-&mt LGUI ESC  &kp Z  &kp X       &kp C                  &kp V        &kp B        &kp N    &kp M              &kp COMMA      &kp DOT     &kp FSLH       &mt RCMD SQT
-                                 &mt LEFT_SHIFT DELETE  &lt NAV TAB  &kp SPACE    &kp RET  &lt SYM LG(SPACE)  &kp BACKSPACE
+                    &kp Q       &kp W       &kp E        &kp R        &kp T        &kp Y    &kp U              &kp I          &kp O       &kp P
+                    &mt LGUI A  &mt LALT S  &mt LCTRL D  &kp F        &kp G        &kp H    &kp J              &mt RCTRL K    &mt RALT L  &mt RGUI SEMICOLON
+&mt LEFT_SHIFT ESC  &kp Z       &kp X       &kp C        &kp V        &kp B        &kp N    &kp M              &kp COMMA      &kp DOT     &kp FSLH            &mt RIGHT_SHIFT SQT
+                                            &kp DELETE   &lt NAV TAB  &kp SPACE    &kp RET  &lt SYM LG(SPACE)  &kp BACKSPACE
             >;
         };
 
